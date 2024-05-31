@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--codificacion-->
+        <meta name="viewport" content="width=device-width">
+        <title> Webkata | GUVI</title>
+        <meta name="description" content="e">
+    
+        <meta property="og:title" content="Webkata | GUVI">
+        <meta property="og:description" content="Learn Web development skills by a series of tasks">
+        <meta property="og:image" content="/image/guvi.png">
+        <meta property="og:image:alt" content="Guvi logo">
+
+        <link rel="alternate" href="https://guvi.in/webkata"
+        hreflang="es-GB">
+        <link rel="canonical" href="https://guvi.in">
+
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+
+        <link rel="icon" type="image/png" href="/image/guvi.png">
+        
+
+        <style>
+
+                      
+            .container {
+                display: inline-flex;
+                flex-direction: row;
+                width: 100vw;
+                height: 67.11px;
+                box-sizing: content-box;
+                z-index: 999;
+                background: #ffffff ;
+                align-items: center;
+                justify-content: flex-start;
+                
+
+                
+            }
+
+            .container-header{
+                display: flex;
+                width: 100vw;
+                align-items: center;
+                justify-content: flex-end;
+
+            }
+
+    
+            #login {
+                box-sizing: border-box;
+                color: #0DBA4B;
+                background: #fff;
+                margin: 16px;
+                padding: 8px;
+                border-color: #fff;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 16px;
+                
+            }
+
+            #sign-up {
+                box-sizing: border-box;
+                color: #fff;
+                background: #0DBA4B;
+                margin: 16px;
+                padding: 8px;
+                border-color: #0DBA4B;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 16px;
+                border-radius: 4px;   
+                                
+            }
+            .nav-header{ 
+                display: flex;
+                flex-direction: row;
+                width: 100vw;
+                height: 67.11px;
+                box-sizing: border-box;
+                z-index: 99;
+                background: #ffffff ;
+                align-items: center;
+                justify-content: flex-end;
+                box-shadow: 3px 3px rgba(0,0,0, 10%);
+
+            }
+            
+            #left-menu {
+                position: absolute;
+                top: 76px;
+                padding-top: 16px;
+                padding-left: 20px;
+                z-index: 900;
+                width: 76px;
+                height: 100vh;
+                background: #fff;
+                box-shadow: 3px 3px rgba(0,0,0, 10%);
+                
+            }
+            .ide-button1 {
+                width: 23px;
+                height: 21;
+                background: #fff;
+                padding: 10px;
+                border: 0px;
+                border-color: #fff;
+                font-size: 20px;
+                 
+            }
+        
+            .img-left-menu {
+            padding: 20px 10px 20px ;
+            opacity: 40%;
+            
+            
+            }
+            #logo-courses {
+                box-shadow: 0px 1px rgba(0,0,0, 30%);
+            }
+            #logo-diamante {
+                box-shadow: 0px 1px rgba(0,0,0, 30%);
+            }
+            .main-menu{
+                display: grid;
+                position: absolute;
+                top: 76px;
+                left: 105px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                
+                background: rgba(0,0,0, 2%);
+                border: 2px solid black;
+                
+            }
+            .section-landing-page { 
+                border: 2px solid purple;
+                
+            
+            }
+            .description-landing{
+                width: 40%;
+                font-size: 20px;
+            }
+            #blank_space{
+                height: 300px;
+                
+            }
+            #webkata-infor {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                height: auto;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 40px;
+            }
+            h1{
+                font-size: 40px;
+            }
+
+            #skills{ 
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                border: 2px solid green;
+                justify-items:space-evenly;
+                
+                
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                column-gap: 20px; 
+                row-gap: 20px;  
+                padding-left: 40px;            
+
+            }
+            .skill-section{
+                width: 300px;
+                height: auto;
+                background: #fff;
+                align-items: flex-end;
+                padding: 30px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 25%;
+                font-size: 20px;
+                border: 2px solid green;
+            
+                
+            }
+            .html-section{ 
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-between;
+                padding: 0px 0px 10px;
+
+                
+                
+            }
+            #etiqueta{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 66.45px;
+                height: 32px;
+                background: rgba(0,0,0, 2%);
+                border-radius: 5px;
+
+            }
+            
+            .item-skill{
+                display: flex;
+                justify-content: space-evenly;
+                box-sizing: border-box;
+                border: 1px rgba(0,0,0, 10%);
+                flex-flow: row wrap;
+                
+            }
+            .item1{
+                box-shadow: 1px 0px rgba(0,0,0, 10%); 
+                padding-right: 15px;
+            }
+            .item2{
+                box-shadow: 1px 0px rgba(0,0,0, 10%); 
+                padding-right: 15px;
+            }         
+            #logo-campana{
+            opacity: 10%;
+            }
+            .foot-skill{
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                border: 1px rgba(0,0,0, 10%);
+                flex-flow: row wrap;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgba(0,0,0, 30%);
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                padding: 0px 0px 10px;
+            }
+
+            .start-button{
+                background:#0DBA4B;
+                border-radius: 5px;
+                border-color: #0DBA4B;
+                box-shadow: 0px 0px white;
+                color: #fff;
+                width: 100px;
+                height: 38px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <section class="container">
+                <div class="nav-header">
+                    <div id="container-logo" class="container-logo" download href="/image/guvi.png" ></div>
+                        <img id= "logo-GUVI" width= "95" height= "41.11" title="GUVI-logo" src="/image/guvi.png">
+                    <div class="container-header">
+                        <button id="login"><strong>Login</strong></button>
+                        <button id="sign-up"><strong> Sign up</strong></button>
+                    </div>
+                </div> 
+            </section>
+            <section class="container">
+                <div id="left-menu">
+                    <div download href="/image/courses.png" ></div>
+                            <img id= "logo-courses" class="img-left-menu"  width= "23" height= "21" title="courses-logo" src="/image/courses.png">
+                    <div download href="/image/codekata.png" ></div>
+                            <img class="img-left-menu"  id= "logo-codekata" width= "23" height= "21" title="codekata-logo" src="/image/codekata.png">
+                    <div download href="/image/webkata.png" ></div>
+                            <img class="img-left-menu" id= "logo-webkata" width= "23" height= "21" title="webkata-logo" src="/image/webkata.png">
+                    <div download href="/image/debugging.png" ></div>
+                            <img class="img-left-menu" id= "logo-debugging" width= "23" height= "21" title="debugging-logo" src="/image/debugging.png">
+                    <div download href="/image/diamante.png" ></div>
+                            <img class="img-left-menu" id= "logo-diamante" width= "23" height= "21" title="diamante-logo" src="/image/diamante.png">
+                    <div download href="/image/leaderboard.png" ></div>
+                            <img class="img-left-menu" id= "logo-leaderboard" width= "23" height= "21" title="leaderboard" src="/image/leaderboard.png">
+                    <div download href="/image/regalo.png" ></div>
+                            <img class="img-left-menu" id= "logo-codekata" width= "23" height= "21" title="regalo-logo" src="/image/regalo.png">
+                    <div download href="/image/codekata.png" ></div>
+                            <img class="img-left-menu" id= "logo-codekata" width= "23" height= "21" title="referral-logo" src="/image/referral.png">
+                </div>
+             </section>
+        </header>
+            <section class="main-menu">
+                
+                <div id= "blank-space"class="section-landing-page"></div>
+                <main id="webkata-infor" class="section-landing-page">
+                    <div><h1>Webkata</h1></div>
+                    <div><article class="description-landing">
+                        <p>Learn Web development skills by a series of tasks. Web is the Front-end practice
+                         platform which hosts a series of taskes on Web Development skills like HTML,CSS, 
+                         and JavaScript. This cloud basesdd module will enable you to practice Front-end 
+                         skills without any nedd ti setup local environment. </p>
+                    </div>
+                           
+                    </article>
+                </main>
+                <section id="skills" class="section-landing-page">
+                    <div class="skill-section">
+                        <div class= "html-section" download href="/image/html.png" >
+                            <img id= "logo-courses" width= "36.94" height= "41.89" title="html-logo" src="/image/html.png"><strong>HTML</strong>
+                            <div id="etiqueta">
+                                <div>New</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-skill">
+                            <div class="item1">
+                                <div class="font-bold">0/92</div>
+                                <div>Solved</div>
+                            </div>
+                                        
+                            <div class="item2">
+                                <div class="font-bold">0/2214</div>
+                                <div>Geekoins</div>
+                            </div>
+                            <div class="item3">
+                                <div></div>
+                                <img id= "logo-campana" width= "50" height= "51" title="campana" src="/image/campana.png">
+                            </div>
+                        </div>
+                        <div class="foot-skill">
+                            <div>Submissions: 424107 </div>
+                            <button class="start-button">Start</button>
+                        </div>
+                    
+                    </div>
+                    
+                      
+                    <div class="skill-section">
+                        <div class= "html-section" download href="/image/css.png" >
+                            <img id= "logo-css" width= "36.94" height= "41.89" title="css-logo" src="/image/css.png"><strong>CSS</strong>
+                            <div id="etiqueta">
+                                <div>New</div>
+                            </div>
+                        </div>
+                        <div class="item-skill">
+                            <div class="item1">
+                                <div class="font-bold">0/133</div>
+                                <div>Solved</div>
+                            </div>
+                                        
+                            <div class="item2">
+                                <div class="font-bold">0/2830</div>
+                                <div>Geekoins</div>
+                            </div>
+                            <div class="item3">
+                                <div></div>
+                                <img id= "logo-campana" width= "50" height= "51" title="campana" src="/image/campana.png">
+                            </div>
+                        </div>
+                            <div class="foot-skill">
+                                <div>Submissions: 424107 </div>
+                                <button class="start-button">Start</button>
+                            </div>
+                        
+                    </div>
+                    <div class="skill-section">
+                        <div class= "html-section" download href="/image/javascript.png" >
+                            <img id= "logo-javascript" width= "45" height= "42.61" title="javascript" src="/image/javascript.png"><strong>JavaScript</strong>
+                            <div id="etiqueta">
+                                <div>New</div>
+                            </div>
+                        </div>
+                        <div class="item-skill">
+                            <div class="item1">
+                                <div class="font-bold">0/30</div>
+                                <div>Solved</div>
+                            </div>
+                                        
+                            <div class="item2">
+                                <div class="font-bold">0/1040</div>
+                                <div>Geekoins</div>
+                            </div>
+                            <div class="item3">
+                                <div></div>
+                                <img id= "logo-campana" width= "50" height= "51" title="campana" src="/image/campana.png">
+                            </div>
+                        </div>
+                            <div class="foot-skill">
+                                <div>Submissions: 424107 </div>
+                                <button class="start-button">Start</button>
+                            </div>
+                    </div>
+                    <div class="skill-section">
+                        <div class= "html-section" download href="/image/bootstrap.png" >
+                            <img id= "logo-bootstrap" width= "53" height= "42" title="bootstrap" src="/image/bootstrap.png"><strong>Bootstrap</strong>
+                            <div id="etiqueta">
+                                <div>New</div>
+                            </div>
+                        </div>
+                        <div class="item-skill">
+                            <div class="item1">
+                                <div class="font-bold">0/46</div>
+                                <div>Solved</div>
+                            </div>
+                                        
+                            <div class="item2">
+                                <div class="font-bold">0/1090</div>
+                                <div>Geekoins</div>
+                            </div>
+                            <div class="item3">
+                                <div></div>
+                                <img id= "logo-campana" width= "50" height= "51" title="campana" src="/image/campana.png">
+                            </div>
+                        </div>
+                            <div class="foot-skill">
+                                <div>Submissions: 424107 </div>
+                                <button class="start-button">Start</button>
+                            </div>
+                    </div>
+                </section>
+        </section>
+                
+            
+        
+    </body>
